@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24517222.svg)](https://doi.org/10.5281/zenodo.24517222)
+
 # US plug-in (balcony) solar laws by state
 
 <!-- description -->Plug-in (balcony) solar law status for all 50 US states, DC and 5 territories: bill, status, start date, source link and date checked, where each exists.<!-- /description --> A copy of the table at **[sunderstand.com/plug-in-solar/legislation](https://sunderstand.com/plug-in-solar/legislation?utm_source=github)**, which has each state's full rules and is the place to read and cite it.
