@@ -2,7 +2,7 @@
   "title": "US Plug-in (Balcony) Solar Laws by State",
   "subtitle": "Plug-in solar law status, bill and start date for each US state and territory",
   "description": "{{description}}\n\nA copy of the table at https://sunderstand.com/plug-in-solar/legislation?utm_source=kaggle, which has each state's full rules and is the place to read and cite it.\n\n**Informational, not legal advice; verify with the source link.**\n\nThere is no size-limit column. Not every row has a bill, source link or date (\"No law found\" and \"Not yet researched\" rows have no source link).\n\nCite: Sunderstand, \"Plug-in and balcony solar laws by state\", checked {{last_checked}}, https://sunderstand.com/plug-in-solar/legislation\n\nLicense: CC BY 4.0. Versions: https://github.com/sunderstand/plug-in-solar-laws",
-  "id": "sunderstand/us-plug-in-solar-laws",
+  "id": "sunderstand/us-plug-in-balcony-solar-laws-by-state",
   "licenses": [
     {
       "name": "CC-BY-4.0"
