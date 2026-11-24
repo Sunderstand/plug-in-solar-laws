@@ -1,0 +1,119 @@
+# Nightly sync for github.com/sunderstand/plug-in-solar-laws (data only, no site code).
+# 1. Downloads ONLY https://sunderstand.com/plug-in-solar/legislation/laws.csv and validates it
+#    (exactly 56 rows, exact columns, no blank status, valid ISO dates, checked_on not in the future,
+#    https links). Any failure exits non-zero: no commit, no tag, no upload.
+# 2. Only when the rows changed: asserts the run touched nothing but laws.csv, laws.json, the
+#    README date markers and one CHANGELOG line; commits; pushes a data-YYYY-MM-DD tag.
+#    It creates NO GitHub release, so Zenodo (which archives releases) never sees nightly runs.
+#    Monthly releases for Zenodo come from snapshot.yml.
+# 3. Kaggle and Hugging Face uploads run only if their secrets exist.
+name: Nightly sync from sunderstand.com
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # 09:17 UTC, 1:17 am Pacific standard time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      HAS_KAGGLE: ${{ secrets.KAGGLE_KEY != '' }}
+      HAS_HF: ${{ secrets.HF_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # tags, so a tag name never repeats
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      - name: Download the site CSV and rebuild
+        id: build
+        run: |
+          set -euo pipefail
+          TAG="data-$(date -u +%F)"
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then TAG="$TAG-$(date -u +%H%M)"; fi
+          node scripts/build-laws-package.mjs --out . --release "$TAG"
+          if git diff --quiet -- laws.csv laws.json; then
+            echo "No change in the data; nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git diff --stat
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check the run touched only the data files
+        if: steps.build.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          bad=$(git status --porcelain | awk '{print $2}' | grep -vxE 'laws\.csv|laws\.json|README\.md|hf/README\.md|CHANGELOG\.md' || true)
+          if [ -n "$bad" ]; then echo "refusing: unexpected changes: $bad"; exit 1; fi
+
+      - name: Commit and tag (no release; Zenodo is monthly)
+        if: steps.build.outputs.changed == 'true'
+        env:
+          TAG: ${{ steps.build.outputs.tag }}
+        run: |
+          set -euo pipefail
+          git config user.name "sunderstand-sync (github actions)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add laws.csv laws.json README.md CHANGELOG.md hf/README.md
+          git commit -m "data: sync from sunderstand.com ($TAG)"
+          git tag "$TAG"
+          git push origin "HEAD:${GITHUB_REF_NAME}" "refs/tags/$TAG"
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        if: steps.build.outputs.changed == 'true' && (env.HAS_KAGGLE == 'true' || env.HAS_HF == 'true')
+        with:
+          python-version: "3.12"
+
+      - name: Kaggle (only if the KAGGLE_KEY secret exists)
+        if: steps.build.outputs.changed == 'true' && env.HAS_KAGGLE == 'true'
+        continue-on-error: true # the commit and tag above already stand
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          TAG: ${{ steps.build.outputs.tag }}
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check -q "kaggle==2.2.5"
+          d="$RUNNER_TEMP/kaggle"; mkdir -p "$d"
+          cp laws.csv laws.json "$d"/
+          # Fill the description and date from laws.json (counts are never typed).
+          node -e 'const fs=require("fs");const j=JSON.parse(fs.readFileSync("laws.json"));const m=fs.readFileSync("kaggle/dataset-metadata.json","utf8").replaceAll("{{description}}",j.description).replaceAll("{{last_checked}}",j.last_checked);fs.writeFileSync(process.argv[1],m)' "$d/dataset-metadata.json"
+          kaggle datasets version -p "$d" -m "Sync $TAG from sunderstand.com"
+
+      - name: Hugging Face (only if the HF_TOKEN secret exists)
+        if: steps.build.outputs.changed == 'true' && env.HAS_HF == 'true'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO: sunderstand/plug-in-solar-laws
+          TAG: ${{ steps.build.outputs.tag }}
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check -q "huggingface_hub==2.4.0"
+          d="$RUNNER_TEMP/hf"; mkdir -p "$d"
+          cp laws.csv laws.json "$d"/
+          cp hf/README.md "$d"/README.md
+          python - "$d" <<'PY'
+          import os, sys
+          from huggingface_hub import HfApi
+          HfApi(token=os.environ["HF_TOKEN"]).upload_folder(
+              folder_path=sys.argv[1],
+              repo_id=os.environ["HF_REPO"],
+              repo_type="dataset",
+              commit_message=f"Sync {os.environ['TAG']} from sunderstand.com",
+          )
+          PY

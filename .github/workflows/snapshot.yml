@@ -1,0 +1,47 @@
+# Monthly snapshot release for github.com/sunderstand/plug-in-solar-laws.
+# On the 1st of each month (or by hand), if laws.csv changed since the last vYYYY.MM release,
+# re-validates the committed data and publishes a GitHub release tagged vYYYY.MM with laws.csv
+# and laws.json attached. The Zenodo GitHub integration archives each published release and
+# mints a DOI, so this is the only workflow that creates releases (gate #1228 condition 7).
+name: Monthly snapshot release
+
+on:
+  schedule:
+    - cron: "0 12 1 * *" # 12:00 UTC on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      - name: Release if the data changed since the last snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TAG="v$(date -u +%Y.%m)"
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then echo "$TAG exists; nothing to do."; exit 0; fi
+          LAST=$(git tag --list 'v[0-9][0-9][0-9][0-9].[0-9][0-9]' --sort=-creatordate | head -1)
+          if [ -n "$LAST" ] && git diff --quiet "$LAST" HEAD -- laws.csv; then echo "No data change since $LAST."; exit 0; fi
+          # Re-validate what is committed (no download, no writes).
+          node scripts/build-laws-package.mjs --out . --input laws.csv --check
+          CHECKED=$(node -p 'require("./laws.json").last_checked')
+          ROWS=$(node -p 'require("./laws.json").row_count')
+          printf 'Monthly snapshot. Data last checked %s; %s rows.\n\nRead and cite: https://sunderstand.com/plug-in-solar/legislation\n\nInformational, not legal advice; verify with the source link.\n' "$CHECKED" "$ROWS" > "$RUNNER_TEMP/notes.md"
+          gh release create "$TAG" laws.csv laws.json --title "$TAG (data checked $CHECKED)" --notes-file "$RUNNER_TEMP/notes.md"

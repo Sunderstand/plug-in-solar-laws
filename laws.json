@@ -1,0 +1,554 @@
+{
+  "name": "US plug-in (balcony) solar laws by state",
+  "description": "Plug-in (balcony) solar law status for all 50 US states, DC and 5 territories: bill, status, start date, source link and date checked, where each exists.",
+  "publisher": "Sunderstand",
+  "canonical_url": "https://sunderstand.com/plug-in-solar/legislation",
+  "source_csv": "https://sunderstand.com/plug-in-solar/legislation/laws.csv",
+  "license": "CC-BY-4.0",
+  "last_checked": "2026-11-23",
+  "row_count": 56,
+  "columns": [
+    {
+      "name": "state",
+      "type": "string",
+      "description": "State, District of Columbia or territory name."
+    },
+    {
+      "name": "bill",
+      "type": "string",
+      "description": "The bill or act number; blank where no bill exists or while the number is being confirmed."
+    },
+    {
+      "name": "status",
+      "type": "string (enum)",
+      "description": "Plain-English law status (see allowed values)."
+    },
+    {
+      "name": "takes_effect",
+      "type": "date (YYYY-MM-DD)",
+      "description": "The date a signed law takes effect; blank if none."
+    },
+    {
+      "name": "source_link",
+      "type": "URL",
+      "description": "The government page that was read (statute, bill, legislature record or governor's announcement); blank where there is none."
+    },
+    {
+      "name": "source_page",
+      "type": "URL",
+      "description": "Sunderstand's page for that state; blank for the territories."
+    },
+    {
+      "name": "checked_on",
+      "type": "date (YYYY-MM-DD)",
+      "description": "The date the row was last checked; blank for the territories (not yet researched)."
+    }
+  ],
+  "rows": [
+    {
+      "state": "Colorado",
+      "bill": "HB26-1007",
+      "status": "Law in force",
+      "takes_effect": "2026-08-12",
+      "source_link": "https://leg.colorado.gov/bills/HB26-1007",
+      "source_page": "https://sunderstand.com/plug-in-solar/colorado",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Connecticut",
+      "bill": "HB 5340 (Public Act 26-127)",
+      "status": "Law in force",
+      "takes_effect": "2026-10-01",
+      "source_link": "https://www.cga.ct.gov/2026/act/Pa/pdf/2026PA-00127-R00HB-05340-PA.PDF",
+      "source_page": "https://sunderstand.com/plug-in-solar/connecticut",
+      "checked_on": "2026-11-21"
+    },
+    {
+      "state": "Maine",
+      "bill": "LD 1730",
+      "status": "Law in force",
+      "takes_effect": "2026-07-29",
+      "source_link": "https://legislature.maine.gov/statutes/35-a/title35-Asec3475.html",
+      "source_page": "https://sunderstand.com/plug-in-solar/maine",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Maryland",
+      "bill": "HB 1532",
+      "status": "Law in force",
+      "takes_effect": "2026-07-01",
+      "source_link": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1532?ys=2026RS",
+      "source_page": "https://sunderstand.com/plug-in-solar/maryland",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Utah",
+      "bill": "HB 340",
+      "status": "Law in force",
+      "takes_effect": "2025-05-07",
+      "source_link": "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
+      "source_page": "https://sunderstand.com/plug-in-solar/utah",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Vermont",
+      "bill": "S.202 (Act 149)",
+      "status": "Law in force",
+      "takes_effect": "2026-07-01",
+      "source_link": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT149/ACT149%20As%20Enacted.pdf",
+      "source_page": "https://sunderstand.com/plug-in-solar/vermont",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "California",
+      "bill": "SB 868",
+      "status": "Signed, takes effect Jan 1, 2027",
+      "takes_effect": "2027-01-01",
+      "source_link": "https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/",
+      "source_page": "https://sunderstand.com/plug-in-solar/california",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "New Hampshire",
+      "bill": "SB 540",
+      "status": "Signed, takes effect Jan 1, 2027",
+      "takes_effect": "2027-01-01",
+      "source_link": "https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?sy=2026&id=1317&txtFormat=html",
+      "source_page": "https://sunderstand.com/plug-in-solar/new-hampshire",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "New Jersey",
+      "bill": "S2368/A4836 (Garden State Balcony Solar Act)",
+      "status": "Signed, takes effect Mar 1, 2027",
+      "takes_effect": "2027-03-01",
+      "source_link": "https://www.nj.gov/governor/news/2026/20260901a.shtml",
+      "source_page": "https://sunderstand.com/plug-in-solar/new-jersey",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Virginia",
+      "bill": "HB 395 / SB 250",
+      "status": "Signed, takes effect Jan 1, 2027",
+      "takes_effect": "2027-01-01",
+      "source_link": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1212.1/",
+      "source_page": "https://sunderstand.com/plug-in-solar/virginia",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "New York",
+      "bill": "A.9111-C / S.8512-C (SUNNY Act)",
+      "status": "Passed, awaiting governor",
+      "takes_effect": null,
+      "source_link": "https://www.nysenate.gov/legislation/bills/2025/S8512",
+      "source_page": "https://sunderstand.com/plug-in-solar/new-york",
+      "checked_on": "2026-11-21"
+    },
+    {
+      "state": "District of Columbia",
+      "bill": "B26-0602",
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": "https://dccouncil.gov/council-passes-third-recent-bill-seeking-improved-utility-access-and-affordability-plus-maternity-funds-for-cedar-hill-regional-medical-center/",
+      "source_page": "https://sunderstand.com/plug-in-solar/washington-dc",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Massachusetts",
+      "bill": "H.5175",
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": "https://malegislature.gov/Bills/194/H5175",
+      "source_page": "https://sunderstand.com/plug-in-solar/massachusetts",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Michigan",
+      "bill": "HB 5764",
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": "https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5764",
+      "source_page": "https://sunderstand.com/plug-in-solar/michigan",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "North Carolina",
+      "bill": "H 1129",
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": "https://www.ncleg.gov/BillLookUp/2025/H1129",
+      "source_page": "https://sunderstand.com/plug-in-solar/north-carolina",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Ohio",
+      "bill": "HB 755",
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": "https://ohiohouse.gov/legislation/136/hb755/status",
+      "source_page": "https://sunderstand.com/plug-in-solar/ohio",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Pennsylvania",
+      "bill": null,
+      "status": "Bill in progress",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/pennsylvania",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Alaska",
+      "bill": "HB 257",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.akleg.gov/basis/Bill/Detail/34?Root=HB+257",
+      "source_page": "https://sunderstand.com/plug-in-solar/alaska",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Arizona",
+      "bill": "SB 1606",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://apps.azleg.gov/BillStatus/BillOverview?SessionID=130&BillNumber=SB1606",
+      "source_page": "https://sunderstand.com/plug-in-solar/arizona",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Delaware",
+      "bill": "SB 270",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://legis.delaware.gov/BillDetail/143022",
+      "source_page": "https://sunderstand.com/plug-in-solar/delaware",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Georgia",
+      "bill": "HB 1304",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.legis.ga.gov/legislation/73191",
+      "source_page": "https://sunderstand.com/plug-in-solar/georgia",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Hawaii",
+      "bill": "SB 2902",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.capitol.hawaii.gov/session/measure_indiv.aspx?billtype=SB&billnumber=2902&year=2026",
+      "source_page": "https://sunderstand.com/plug-in-solar/hawaii",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Idaho",
+      "bill": "H 612",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://legislature.idaho.gov/sessioninfo/2026/legislation/H0612/",
+      "source_page": "https://sunderstand.com/plug-in-solar/idaho",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Illinois",
+      "bill": "SB 3104",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.ilga.gov/Legislation/BillStatus?DocNum=3104&GAID=18&DocTypeID=SB&GA=104",
+      "source_page": "https://sunderstand.com/plug-in-solar/illinois",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Indiana",
+      "bill": "SB 74, HB 1084",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://iga.in.gov/legislative/2026/bills/senate/74/details",
+      "source_page": "https://sunderstand.com/plug-in-solar/indiana",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Iowa",
+      "bill": "HF 2046",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.legis.iowa.gov/legislation/BillBook?ga=91&ba=HF2046",
+      "source_page": "https://sunderstand.com/plug-in-solar/iowa",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Minnesota",
+      "bill": "SF 4504",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.revisor.mn.gov/bills/bill.php?b=senate&f=SF4504&ssn=0&y=2026",
+      "source_page": "https://sunderstand.com/plug-in-solar/minnesota",
+      "checked_on": "2026-11-21"
+    },
+    {
+      "state": "Missouri",
+      "bill": "HB 2528; HB 2444",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://house.mo.gov/bill.aspx?bill=HB2528&year=2026&code=R",
+      "source_page": "https://sunderstand.com/plug-in-solar/missouri",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "New Mexico",
+      "bill": "SB 157",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.nmlegis.gov/Legislation/Legislation?chamber=S&legType=B&legNo=157&year=26",
+      "source_page": "https://sunderstand.com/plug-in-solar/new-mexico",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Oklahoma",
+      "bill": "HB 4060",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB4060&Session=2600",
+      "source_page": "https://sunderstand.com/plug-in-solar/oklahoma",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Oregon",
+      "bill": "HB 4080",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://olis.oregonlegislature.gov/liz/2026R1/Measures/Overview/HB4080",
+      "source_page": "https://sunderstand.com/plug-in-solar/oregon",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Rhode Island",
+      "bill": "H 7269 Sub A",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://votes.rilegislature.gov/Votes/House/Session/20260609",
+      "source_page": "https://sunderstand.com/plug-in-solar/rhode-island",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "South Carolina",
+      "bill": "H. 4579",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.scstatehouse.gov/sess126_2025-2026/bills/4579.htm",
+      "source_page": "https://sunderstand.com/plug-in-solar/south-carolina",
+      "checked_on": "2026-11-22"
+    },
+    {
+      "state": "Washington",
+      "bill": "SB 6050",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://app.leg.wa.gov/billsummary?BillNumber=6050&Year=2025&Initiative=false",
+      "source_page": "https://sunderstand.com/plug-in-solar/washington",
+      "checked_on": "2026-11-21"
+    },
+    {
+      "state": "West Virginia",
+      "bill": null,
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.wvlegislature.gov/bill_status/bills_history.cfm?input=5648&year=2026&sessiontype=RS&btype=bill",
+      "source_page": "https://sunderstand.com/plug-in-solar/west-virginia",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "state": "Wyoming",
+      "bill": "HB 146",
+      "status": "Bill did not pass (may return)",
+      "takes_effect": null,
+      "source_link": "https://www.wyoleg.gov/Legislation/2026/HB0146",
+      "source_page": "https://sunderstand.com/plug-in-solar/wyoming",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Alabama",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/alabama",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Arkansas",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/arkansas",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "state": "Florida",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/florida",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Kansas",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/kansas",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Kentucky",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/kentucky",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Louisiana",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/louisiana",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Mississippi",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/mississippi",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Montana",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/montana",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Nebraska",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/nebraska",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Nevada",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/nevada",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "North Dakota",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/north-dakota",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "South Dakota",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/south-dakota",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Tennessee",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": "https://wapp.capitol.tn.gov/apps/BillSearch/BillSearchAdvanced?GA=114&Terms=solar",
+      "source_page": "https://sunderstand.com/plug-in-solar/tennessee",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Texas",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/texas",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "Wisconsin",
+      "bill": null,
+      "status": "No law found",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": "https://sunderstand.com/plug-in-solar/wisconsin",
+      "checked_on": "2026-11-23"
+    },
+    {
+      "state": "American Samoa",
+      "bill": null,
+      "status": "Not yet researched",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": null,
+      "checked_on": null
+    },
+    {
+      "state": "Guam",
+      "bill": null,
+      "status": "Not yet researched",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": null,
+      "checked_on": null
+    },
+    {
+      "state": "Northern Mariana Islands",
+      "bill": null,
+      "status": "Not yet researched",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": null,
+      "checked_on": null
+    },
+    {
+      "state": "Puerto Rico",
+      "bill": null,
+      "status": "Not yet researched",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": null,
+      "checked_on": null
+    },
+    {
+      "state": "US Virgin Islands",
+      "bill": null,
+      "status": "Not yet researched",
+      "takes_effect": null,
+      "source_link": null,
+      "source_page": null,
+      "checked_on": null
+    }
+  ],
+  "disclaimer": "Informational, not legal advice; verify with the source link."
+}

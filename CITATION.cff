@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below, with the date you checked it."
+type: dataset
+title: "US plug-in (balcony) solar laws by state"
+abstract: "Plug-in (balcony) solar law status for all 50 US states, DC and 5 territories: bill, status, start date, source link and date checked, where each exists. Mirrored nightly from Sunderstand's state law tracker. Not legal advice."
+authors:
+  - name: "Sunderstand"
+    website: "https://sunderstand.com"
+url: "https://sunderstand.com/plug-in-solar/legislation"
+repository-code: "https://github.com/sunderstand/plug-in-solar-laws"
+license: CC-BY-4.0
+keywords:
+  - plug-in solar
+  - balcony solar
+  - solar energy
+  - state law
+  - legislation
+  - United States
+  - open data
