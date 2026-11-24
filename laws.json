@@ -5,7 +5,7 @@
   "canonical_url": "https://sunderstand.com/plug-in-solar/legislation",
   "source_csv": "https://sunderstand.com/plug-in-solar/legislation/laws.csv",
   "license": "CC-BY-4.0",
-  "last_checked": "2026-11-23",
+  "last_checked": "2026-11-24",
   "row_count": 56,
   "columns": [
     {
@@ -97,7 +97,7 @@
       "takes_effect": "2026-07-01",
       "source_link": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT149/ACT149%20As%20Enacted.pdf",
       "source_page": "https://sunderstand.com/plug-in-solar/vermont",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "California",
@@ -106,7 +106,7 @@
       "takes_effect": "2027-01-01",
       "source_link": "https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/",
       "source_page": "https://sunderstand.com/plug-in-solar/california",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "New Hampshire",
@@ -133,7 +133,7 @@
       "takes_effect": "2027-01-01",
       "source_link": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1212.1/",
       "source_page": "https://sunderstand.com/plug-in-solar/virginia",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "New York",
@@ -151,7 +151,7 @@
       "takes_effect": null,
       "source_link": "https://dccouncil.gov/council-passes-third-recent-bill-seeking-improved-utility-access-and-affordability-plus-maternity-funds-for-cedar-hill-regional-medical-center/",
       "source_page": "https://sunderstand.com/plug-in-solar/washington-dc",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Massachusetts",
@@ -169,7 +169,7 @@
       "takes_effect": null,
       "source_link": "https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5764",
       "source_page": "https://sunderstand.com/plug-in-solar/michigan",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "North Carolina",
@@ -178,7 +178,7 @@
       "takes_effect": null,
       "source_link": "https://www.ncleg.gov/BillLookUp/2025/H1129",
       "source_page": "https://sunderstand.com/plug-in-solar/north-carolina",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Ohio",
@@ -187,16 +187,16 @@
       "takes_effect": null,
       "source_link": "https://ohiohouse.gov/legislation/136/hb755/status",
       "source_page": "https://sunderstand.com/plug-in-solar/ohio",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Pennsylvania",
-      "bill": null,
+      "bill": "HB 1971",
       "status": "Bill in progress",
       "takes_effect": null,
-      "source_link": null,
+      "source_link": "https://www.palegis.us/legislation/bills/2025/hb1971",
       "source_page": "https://sunderstand.com/plug-in-solar/pennsylvania",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Alaska",
@@ -313,7 +313,7 @@
       "takes_effect": null,
       "source_link": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB4060&Session=2600",
       "source_page": "https://sunderstand.com/plug-in-solar/oklahoma",
-      "checked_on": "2026-11-23"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Oregon",
@@ -322,7 +322,7 @@
       "takes_effect": null,
       "source_link": "https://olis.oregonlegislature.gov/liz/2026R1/Measures/Overview/HB4080",
       "source_page": "https://sunderstand.com/plug-in-solar/oregon",
-      "checked_on": "2026-11-23"
+      "checked_on": "2026-11-24"
     },
     {
       "state": "Rhode Island",
