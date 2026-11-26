@@ -1,20 +1,20 @@
 state,bill,status,takes_effect,source_link,source_page,checked_on
-Colorado,HB26-1007,Law in force,2026-08-12,https://leg.colorado.gov/bills/HB26-1007,https://sunderstand.com/plug-in-solar/colorado,2026-11-22
+Colorado,HB26-1007,Law in force,2026-08-12,https://leg.colorado.gov/bills/HB26-1007,https://sunderstand.com/plug-in-solar/colorado,2026-11-25
 Connecticut,HB 5340 (Public Act 26-127),Law in force,2026-10-01,https://www.cga.ct.gov/2026/act/Pa/pdf/2026PA-00127-R00HB-05340-PA.PDF,https://sunderstand.com/plug-in-solar/connecticut,2026-11-21
 Maine,LD 1730,Law in force,2026-07-29,https://legislature.maine.gov/statutes/35-a/title35-Asec3475.html,https://sunderstand.com/plug-in-solar/maine,2026-11-22
-Maryland,HB 1532,Law in force,2026-07-01,https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1532?ys=2026RS,https://sunderstand.com/plug-in-solar/maryland,2026-11-22
+Maryland,HB 1532,Law in force,2026-07-01,https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1532?ys=2026RS,https://sunderstand.com/plug-in-solar/maryland,2026-11-25
 Utah,HB 340,Law in force,2025-05-07,https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf,https://sunderstand.com/plug-in-solar/utah,2026-11-22
 Vermont,S.202 (Act 149),Law in force,2026-07-01,https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT149/ACT149%20As%20Enacted.pdf,https://sunderstand.com/plug-in-solar/vermont,2026-11-24
-California,SB 868,"Signed, takes effect Jan 1, 2027",2027-01-01,https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/,https://sunderstand.com/plug-in-solar/california,2026-11-24
-New Hampshire,SB 540,"Signed, takes effect Jan 1, 2027",2027-01-01,https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?sy=2026&id=1317&txtFormat=html,https://sunderstand.com/plug-in-solar/new-hampshire,2026-11-22
-New Jersey,S2368/A4836 (Garden State Balcony Solar Act),"Signed, takes effect Mar 1, 2027",2027-03-01,https://www.nj.gov/governor/news/2026/20260901a.shtml,https://sunderstand.com/plug-in-solar/new-jersey,2026-11-22
+California,SB 868,"Signed, takes effect Jan 1, 2027",2027-01-01,https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/,https://sunderstand.com/plug-in-solar/california,2026-11-25
+New Hampshire,SB 540,"Signed, takes effect Jan 1, 2027",2027-01-01,https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?sy=2026&id=1317&txtFormat=html,https://sunderstand.com/plug-in-solar/new-hampshire,2026-11-25
+New Jersey,S2368/A4836 (Garden State Balcony Solar Act),"Signed, takes effect Mar 1, 2027",2027-03-01,https://www.nj.gov/governor/news/2026/20260901a.shtml,https://sunderstand.com/plug-in-solar/new-jersey,2026-11-25
 Virginia,HB 395 / SB 250,"Signed, takes effect Jan 1, 2027",2027-01-01,https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1212.1/,https://sunderstand.com/plug-in-solar/virginia,2026-11-24
-New York,A.9111-C / S.8512-C (SUNNY Act),"Passed, awaiting governor",,https://www.nysenate.gov/legislation/bills/2025/S8512,https://sunderstand.com/plug-in-solar/new-york,2026-11-21
+New York,S8512C / A9111C (SUNNY Act),"Passed, awaiting governor",,https://www.nysenate.gov/legislation/bills/2025/S8512,https://sunderstand.com/plug-in-solar/new-york,2026-11-25
 District of Columbia,B26-0602,Bill in progress,,https://dccouncil.gov/council-passes-third-recent-bill-seeking-improved-utility-access-and-affordability-plus-maternity-funds-for-cedar-hill-regional-medical-center/,https://sunderstand.com/plug-in-solar/washington-dc,2026-11-24
-Massachusetts,H.5175,Bill in progress,,https://malegislature.gov/Bills/194/H5175,https://sunderstand.com/plug-in-solar/massachusetts,2026-11-22
+Massachusetts,H.5175,Bill in progress,,https://malegislature.gov/Bills/194/H5175,https://sunderstand.com/plug-in-solar/massachusetts,2026-11-25
 Michigan,HB 5764,Bill in progress,,https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5764,https://sunderstand.com/plug-in-solar/michigan,2026-11-24
 North Carolina,H 1129,Bill in progress,,https://www.ncleg.gov/BillLookUp/2025/H1129,https://sunderstand.com/plug-in-solar/north-carolina,2026-11-24
-Ohio,HB 755,Bill in progress,,https://ohiohouse.gov/legislation/136/hb755/status,https://sunderstand.com/plug-in-solar/ohio,2026-11-24
+Ohio,HB 755,Bill in progress,,https://ohiohouse.gov/legislation/136/hb755/status,https://sunderstand.com/plug-in-solar/ohio,2026-11-25
 Pennsylvania,HB 1971,Bill in progress,,https://www.palegis.us/legislation/bills/2025/hb1971,https://sunderstand.com/plug-in-solar/pennsylvania,2026-11-24
 Alaska,HB 257,Bill did not pass (may return),,https://www.akleg.gov/basis/Bill/Detail/34?Root=HB+257,https://sunderstand.com/plug-in-solar/alaska,2026-11-22
 Arizona,SB 1606,Bill did not pass (may return),,https://apps.azleg.gov/BillStatus/BillOverview?SessionID=130&BillNumber=SB1606,https://sunderstand.com/plug-in-solar/arizona,2026-11-23
@@ -36,7 +36,7 @@ Washington,SB 6050,Bill did not pass (may return),,https://app.leg.wa.gov/billsu
 West Virginia,,Bill did not pass (may return),,https://www.wvlegislature.gov/bill_status/bills_history.cfm?input=5648&year=2026&sessiontype=RS&btype=bill,https://sunderstand.com/plug-in-solar/west-virginia,2026-11-10
 Wyoming,HB 146,Bill did not pass (may return),,https://www.wyoleg.gov/Legislation/2026/HB0146,https://sunderstand.com/plug-in-solar/wyoming,2026-11-23
 Alabama,,No law found,,,https://sunderstand.com/plug-in-solar/alabama,2026-11-23
-Arkansas,,No law found,,,https://sunderstand.com/plug-in-solar/arkansas,2026-11-10
+Arkansas,,No law found,,,https://sunderstand.com/plug-in-solar/arkansas,2026-11-25
 Florida,,No law found,,,https://sunderstand.com/plug-in-solar/florida,2026-11-23
 Kansas,,No law found,,,https://sunderstand.com/plug-in-solar/kansas,2026-11-23
 Kentucky,,No law found,,,https://sunderstand.com/plug-in-solar/kentucky,2026-11-23

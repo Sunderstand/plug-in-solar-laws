@@ -29,7 +29,7 @@ configs:
 
 **Informational, not legal advice; verify with the source link.**
 
-**Last checked:** <!-- last_checked -->2026-11-24<!-- /last_checked -->. **Rows:** <!-- row_count -->56<!-- /row_count -->. There is no size-limit column. <!-- source_link_rows -->37<!-- /source_link_rows --> rows have a `source_link`.
+**Last checked:** <!-- last_checked -->2026-11-25<!-- /last_checked -->. **Rows:** <!-- row_count -->56<!-- /row_count -->. There is no size-limit column. <!-- source_link_rows -->37<!-- /source_link_rows --> rows have a `source_link`.
 
 ## Columns
 
@@ -45,7 +45,7 @@ configs:
 
 ## How to cite
 
-Sunderstand, "Plug-in and balcony solar laws by state", checked <!-- last_checked -->2026-11-24<!-- /last_checked -->, https://sunderstand.com/plug-in-solar/legislation
+Sunderstand, "Plug-in and balcony solar laws by state", checked <!-- last_checked -->2026-11-25<!-- /last_checked -->, https://sunderstand.com/plug-in-solar/legislation
 
 ## License
 

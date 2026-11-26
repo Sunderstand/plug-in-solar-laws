@@ -5,7 +5,7 @@
   "canonical_url": "https://sunderstand.com/plug-in-solar/legislation",
   "source_csv": "https://sunderstand.com/plug-in-solar/legislation/laws.csv",
   "license": "CC-BY-4.0",
-  "last_checked": "2026-11-24",
+  "last_checked": "2026-11-25",
   "row_count": 56,
   "columns": [
     {
@@ -52,7 +52,7 @@
       "takes_effect": "2026-08-12",
       "source_link": "https://leg.colorado.gov/bills/HB26-1007",
       "source_page": "https://sunderstand.com/plug-in-solar/colorado",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Connecticut",
@@ -79,7 +79,7 @@
       "takes_effect": "2026-07-01",
       "source_link": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1532?ys=2026RS",
       "source_page": "https://sunderstand.com/plug-in-solar/maryland",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Utah",
@@ -106,7 +106,7 @@
       "takes_effect": "2027-01-01",
       "source_link": "https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/",
       "source_page": "https://sunderstand.com/plug-in-solar/california",
-      "checked_on": "2026-11-24"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "New Hampshire",
@@ -115,7 +115,7 @@
       "takes_effect": "2027-01-01",
       "source_link": "https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?sy=2026&id=1317&txtFormat=html",
       "source_page": "https://sunderstand.com/plug-in-solar/new-hampshire",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "New Jersey",
@@ -124,7 +124,7 @@
       "takes_effect": "2027-03-01",
       "source_link": "https://www.nj.gov/governor/news/2026/20260901a.shtml",
       "source_page": "https://sunderstand.com/plug-in-solar/new-jersey",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Virginia",
@@ -137,12 +137,12 @@
     },
     {
       "state": "New York",
-      "bill": "A.9111-C / S.8512-C (SUNNY Act)",
+      "bill": "S8512C / A9111C (SUNNY Act)",
       "status": "Passed, awaiting governor",
       "takes_effect": null,
       "source_link": "https://www.nysenate.gov/legislation/bills/2025/S8512",
       "source_page": "https://sunderstand.com/plug-in-solar/new-york",
-      "checked_on": "2026-11-21"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "District of Columbia",
@@ -160,7 +160,7 @@
       "takes_effect": null,
       "source_link": "https://malegislature.gov/Bills/194/H5175",
       "source_page": "https://sunderstand.com/plug-in-solar/massachusetts",
-      "checked_on": "2026-11-22"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Michigan",
@@ -187,7 +187,7 @@
       "takes_effect": null,
       "source_link": "https://ohiohouse.gov/legislation/136/hb755/status",
       "source_page": "https://sunderstand.com/plug-in-solar/ohio",
-      "checked_on": "2026-11-24"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Pennsylvania",
@@ -385,7 +385,7 @@
       "takes_effect": null,
       "source_link": null,
       "source_page": "https://sunderstand.com/plug-in-solar/arkansas",
-      "checked_on": "2026-11-10"
+      "checked_on": "2026-11-25"
     },
     {
       "state": "Florida",

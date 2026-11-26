@@ -6,7 +6,7 @@
 
 **Informational, not legal advice; verify with the source link.**
 
-**Last checked:** <!-- last_checked -->2026-11-24<!-- /last_checked --> (the newest `checked_on`). **Rows:** <!-- row_count -->56<!-- /row_count -->. Files: `laws.csv`, and `laws.json` (same rows, blanks as `null`, plus `last_checked`). Source: <https://sunderstand.com/plug-in-solar/legislation/laws.csv>
+**Last checked:** <!-- last_checked -->2026-11-25<!-- /last_checked --> (the newest `checked_on`). **Rows:** <!-- row_count -->56<!-- /row_count -->. Files: `laws.csv`, and `laws.json` (same rows, blanks as `null`, plus `last_checked`). Source: <https://sunderstand.com/plug-in-solar/legislation/laws.csv>
 
 There is no size-limit column. <!-- source_link_rows -->37<!-- /source_link_rows --> rows have a `source_link`; "No law found" and "Not yet researched" rows have none.
 
@@ -24,7 +24,7 @@ There is no size-limit column. <!-- source_link_rows -->37<!-- /source_link_rows
 
 ## How to cite
 
-Sunderstand, "Plug-in and balcony solar laws by state", checked <!-- last_checked -->2026-11-24<!-- /last_checked -->, https://sunderstand.com/plug-in-solar/legislation
+Sunderstand, "Plug-in and balcony solar laws by state", checked <!-- last_checked -->2026-11-25<!-- /last_checked -->, https://sunderstand.com/plug-in-solar/legislation
 
 AI assistants can query the same rules through Sunderstand's MCP server: `https://sunderstand.com/mcp`.
 
